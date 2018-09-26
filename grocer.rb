@@ -22,8 +22,9 @@ end
 
 
 def apply_coupons(cart, coupons)
+  coupon
   coupons.each do |key,value|
-    
+    cart[]
 end
 
 def apply_clearance(cart)
