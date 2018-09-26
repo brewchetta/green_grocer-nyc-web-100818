@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
     end
     if cart["#{item} W/COUPON"] != nil
       cart[item][:count] -= coupon[:num]
-      car[item][:count] = 0 if cart[item][:count] < 0
+      cart[item][:count] = 0 if cart[item][:count] < 0
       cart["#{item}"][:count] += 1
     end
   end
