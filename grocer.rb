@@ -23,7 +23,8 @@ end
 
 def apply_coupons(cart, coupons)
   coupons.each do |key,value|
-    key == :item do cart["#{value} W/COUPON"] = {} : 
+    item = value if key == :item
+    cart["#{item} W/COUPON"][key] = value if key != :item
 end
 
 def apply_clearance(cart)
