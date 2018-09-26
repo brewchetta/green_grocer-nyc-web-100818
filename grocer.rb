@@ -1,6 +1,10 @@
 require 'pry'
 
-my_cart = 
+my_cart = {
+      "AVOCADO" => {:price => 3.0, :clearance => true, :count => 1},
+      "KALE"    => {:price => 3.0, :clearance => false, :count => 1},
+      "AVOCADO W/COUPON" => {:price => 5.0, :clearance => true, :count => 1},
+    }
 
 def consolidate_cart(cart)
   new_cart = {}
