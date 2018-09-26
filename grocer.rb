@@ -22,6 +22,7 @@ end
 
 
 def apply_coupons(cart, coupons)
+  coupons.each do |coupon|
   item = coupons[:item]
   cart[item] == nil ? puts "You have a coupon but no item!" : cart[item][:count] -= coupons[:num]
   cart["#{item} W/COUPON"][:price] = coupons
