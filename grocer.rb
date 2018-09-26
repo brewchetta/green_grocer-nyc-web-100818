@@ -1,3 +1,9 @@
+my_cart = [
+  {"AVOCADO" => {:price => 3.0, :clearance => true }},
+  {"AVOCADO" => {:price => 3.0, :clearance => true }},
+  {"KALE"    => {:price => 3.0, :clearance => false}}
+]
+
 def consolidate_cart(cart)
   new_cart = {}
   cart.each do |item|
