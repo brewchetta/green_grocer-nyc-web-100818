@@ -27,9 +27,11 @@ def apply_coupons(cart, coupons)
     cart[item][:count] -= coupon[:num]
     new_item = "#{item} W/COUPON"
     binding.pry
-    cart[new_item][:price] = coupon[:cost]
-    cart[new_item][:clearance] = cart[item][:clearance]
-    cart[new_item][:count] == nil ? cart["#{item} W/COUPON"][:count] = 1 : cart["#{item} W/COUPON"][:count] += 1
+    cart[new_item] = {
+      price:coupon[:cost],
+      clearance: cart[item][:clearance],
+      count: 1
+    }
   end
   puts cart
   cart
