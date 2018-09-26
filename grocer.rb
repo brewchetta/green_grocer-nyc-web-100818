@@ -1,3 +1,8 @@
+my_coupons = [
+  {:item => "AVOCADO", :num => 2, :cost => 5.0},
+  {:item => "AVOCADO", :num => 2, :cost => 5.0}
+]
+
 
 def consolidate_cart(cart)
   new_cart = {}
