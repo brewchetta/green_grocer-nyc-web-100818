@@ -23,7 +23,7 @@ end
 
 def apply_coupons(cart, coupons)
   coupons.each do |key,value|
-    cart[]
+    if key = :item
 end
 
 def apply_clearance(cart)
