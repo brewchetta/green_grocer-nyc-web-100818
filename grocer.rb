@@ -25,6 +25,10 @@ def apply_coupons(cart, coupons)
   coupons.each do |key,value|
     item = value if key == :item
     cart.each do |k,v|
+      if k == item
+      end
+    end
+        
     cart["#{item} W/COUPON"][key] = value if key != :item
   end
   puts cart
