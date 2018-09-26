@@ -33,11 +33,8 @@ def apply_coupons(cart, coupons)
       count: 1
     }
   end
-  puts cart
   cart
 end
-
-apply_coupons(my_cart,my_coupon)
 
 
 def apply_clearance(cart)
