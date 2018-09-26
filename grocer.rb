@@ -40,8 +40,10 @@ def apply_coupons(cart, coupons)
       cart["#{item}"][:count] += 1
     end
   end
-  cart
+  puts cart
 end
+
+apply_coupons(my_cart,my_coupons)
 
 def apply_clearance(cart)
   cart.each do |food,value|
