@@ -26,6 +26,7 @@ def apply_coupons(cart, coupons)
     item = value if key == :item
     cart["#{item} W/COUPON"][key] = value if key != :item
   end
+  puts cart
   cart
 end
 
