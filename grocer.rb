@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
     item = coupon[:item]
     cart[item] == nil ? puts "You have a coupon but no item!" : cart[item][:count] -= coupons[:num]
     cart["#{item} W/COUPON"][:price] = coupon[:cost]
-    cart["#{item} W/COUPON"][]
+    cart["#{item} W/COUPON"][:clearance] = cart[item][:clearance]
   end
   puts cart
   cart
