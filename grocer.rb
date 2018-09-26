@@ -41,9 +41,8 @@ def apply_coupons(cart, coupons)
         count: 1
       }
     end
-    binding.pry
   end
-  puts cart
+  cart
 end
 
 apply_coupons(my_cart,my_coupons)
