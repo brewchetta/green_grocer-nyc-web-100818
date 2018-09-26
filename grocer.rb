@@ -27,6 +27,7 @@ def apply_coupons(cart, coupons)
     cart.each do |k,v|
       if k == item
         v.each do |l,w|
+        end
       end
     end
 
