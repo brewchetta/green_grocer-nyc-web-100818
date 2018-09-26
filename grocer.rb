@@ -1,3 +1,16 @@
+require 'pry'
+
+my_coupons = [
+  {:item => "AVOCADO", :num => 2, :cost => 5.0},
+  {:item => "AVOCADO", :num => 2, :cost => 5.0}
+]
+
+my_cart = {
+  "AVOCADO" => {:price => 3.0, :clearance => true, :count => 4},
+  "KALE"    => {:price => 3.0, :clearance => false, :count => 1}
+}
+
+
 def consolidate_cart(cart)
   new_cart = {}
   cart.each do |item|
@@ -28,9 +41,12 @@ def apply_coupons(cart, coupons)
         count: 1
       }
     end
+    binding.pry
   end
   puts cart
 end
+
+apply_coupons(my_cart,my_coupons)
 
 def apply_clearance(cart)
   cart.each do |food,value|
