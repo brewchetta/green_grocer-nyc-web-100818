@@ -1,9 +1,8 @@
 require 'pry'
 
 my_cart = {
-      "AVOCADO" => {:price => 3.0, :clearance => true, :count => 1},
-      "KALE"    => {:price => 3.0, :clearance => false, :count => 1},
-      "AVOCADO W/COUPON" => {:price => 5.0, :clearance => true, :count => 1},
+      "AVOCADO" => {:price => 3.0, :clearance => true, :count => 3},
+      "KALE"    => {:price => 3.0, :clearance => false, :count => 1}
 }
 
 my_coupon = [{:item => "AVOCADO", :num => 2, :cost => 5.0}]
