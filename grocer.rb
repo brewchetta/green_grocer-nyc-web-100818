@@ -56,5 +56,3 @@ def checkout(cart, coupons)
   end
   total
 end
-
-checkout(my_cart, my_coupons)
