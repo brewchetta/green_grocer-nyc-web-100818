@@ -18,7 +18,6 @@ def apply_coupons(cart, coupons)
     item = coupon[:item]
     if cart[item] != nil && cart["#{item} W/COUPON"] == nil do
       cart[item][:count] -= coupon[:num]
-      new_item = "#{item} W/COUPON"
       cart["#{item} W/COUPON"] = {
         price:coupon[:cost],
         clearance: cart[item][:clearance],
