@@ -25,8 +25,8 @@ end
 
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
-    binding.pry
     item = coupon[:item]
+    binding.pry
     cart[item][:count] -= coupons[:num]
     cart["#{item} W/COUPON"][:price] = coupon[:cost]
     cart["#{item} W/COUPON"][:clearance] = cart[item][:clearance]
