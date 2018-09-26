@@ -4,7 +4,7 @@ my_coupons = [
 ]
 
 my_cart = {
-  "AVOCADO" => {:price => 3.0, :clearance => true, :count => 3},
+  "AVOCADO" => {:price => 3.0, :clearance => true, :count => 4},
   "KALE"    => {:price => 3.0, :clearance => false, :count => 1}
 }
 
