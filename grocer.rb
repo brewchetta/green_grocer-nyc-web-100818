@@ -23,9 +23,6 @@ end
 
 def apply_coupons(cart, coupons)
   item = coupons[:item]
-  coupons.each do |key,value|
-    item = value if key == :item
-  end
     cart[item] == nil ? puts "Nothing like that in cart!" : cart
     end
 
