@@ -32,7 +32,7 @@ def apply_coupons(cart, coupons)
       cart[item][:count] -= coupon[:num]
       cart[item][:count] = 0 if cart[item][:count] < 0
       cart["#{item}"][:count] += 1
-    end
+    en
     if (cart[item] != nil) && (cart["#{item} W/COUPON"] == nil)
       cart[item][:count] -= coupon[:num]
       cart["#{item} W/COUPON"] = {
