@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
   new_cart = {}
   cart.each do |item|
-    item.each do |name, value|
+    item.each do |name, values|
     end
   end
   new_cart
