@@ -34,6 +34,7 @@ def apply_coupons(cart, coupons)
         count: 1
       }
     end
+    binding.pry
     if cart["#{item} W/COUPON"] != nil
       cart[item][:count] -= coupon[:num]
       cart[item][:count] = 0 if cart[item][:count] < 0
