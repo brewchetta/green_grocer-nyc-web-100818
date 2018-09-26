@@ -1,4 +1,4 @@
-binding.pry
+require 'pry'
 
 my_coupons = [
   {:item => "AVOCADO", :num => 2, :cost => 5.0},
