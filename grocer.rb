@@ -2,6 +2,8 @@ def consolidate_cart(cart)
   new_cart = {}
   cart.each do |item|
     item.each do |name, values|
+      new_cart[item] if new_cart[item]
+      value.each do
     end
   end
   new_cart
