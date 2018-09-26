@@ -1,10 +1,10 @@
 def consolidate_cart(cart)
   new_cart = {}
   cart.each do |item|
-    item.each do |food, value|
+    item.each do |name, value|
     end
-  end 
-
+  end
+  new_cart
 end
 
 def apply_coupons(cart, coupons)
