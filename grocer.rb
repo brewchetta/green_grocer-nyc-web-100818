@@ -24,7 +24,7 @@ end
 def apply_coupons(cart, coupons)
   item = coupons[:item]
   cart[item] == nil ? puts "You have a coupon but no item!" : cart[item][:count] -= coupon[:num]
-  
+  cart["#{item} W/COUPON"][]
   end
 
     cart["#{item} W/COUPON"][key] = value if key != :item
