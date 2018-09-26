@@ -6,6 +6,8 @@ my_cart = {
       "AVOCADO W/COUPON" => {:price => 5.0, :clearance => true, :count => 1},
 }
 
+my_coupon = 
+
 def consolidate_cart(cart)
   new_cart = {}
   cart.each do |item|
