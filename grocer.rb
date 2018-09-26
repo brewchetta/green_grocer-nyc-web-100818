@@ -41,7 +41,7 @@ def apply_clearance(cart)
   cart.each do |food,value|
     cart[food][:price] = ('%.2f' % (cart[food][:price] * 0.80))to_f if cart[food][:clearance]
   end
-  cart
+  puts cart
 end
 
 def checkout(cart, coupons)
@@ -57,4 +57,4 @@ def checkout(cart, coupons)
   total
 end
 
-checkout(my_cart, my_coupons)
+# checkout(my_cart, my_coupons)
