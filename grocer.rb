@@ -27,6 +27,7 @@ def apply_coupons(cart, coupons)
     end
     if cart["#{item} W/COUPON"] != nil do
 
+    end
   end
   cart
 end
