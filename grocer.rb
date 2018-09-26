@@ -51,7 +51,7 @@ def checkout(cart, coupons)
   cart = apply_clearance(cart)
   puts cart
   cart.each do |item,value|
-    total += cart[item][price] * cart[item][:count]
+    total += cart[item][:price] * cart[item][:count]
     puts total
   end
   total
