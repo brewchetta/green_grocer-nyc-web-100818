@@ -13,7 +13,7 @@ def consolidate_cart(cart)
       new_cart[name] == nil ? new_cart[name] = {} : new_cart[name][:count] += 1
       values.each do |k,v|
         new_cart[name][k] = v
-        binding.pry
+#        binding.pry
       end
     end
   end
