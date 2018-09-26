@@ -19,14 +19,14 @@ def apply_coupons(cart, coupons)
     if cart[item] != nil && cart["#{item} W/COUPON"] == nil do
       cart[item][:count] -= coupon[:num]
       new_item = "#{item} W/COUPON"
-      cart[new_item] = {
+      cart["#{item} W/COUPON"] = {
         price:coupon[:cost],
         clearance: cart[item][:clearance],
         count: 1
       }
     end
     if cart["#{item} W/COUPON"] != nil do
-
+      cart["#{item}"]
     end
   end
   cart
