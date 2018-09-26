@@ -38,6 +38,7 @@ end
 
 def apply_clearance(cart)
   cart.each do |food,value|
+    if cart[food][:clearance]
 end
 
 def checkout(cart, coupons)
