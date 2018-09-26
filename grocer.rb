@@ -27,7 +27,6 @@ def apply_coupons(cart, coupons)
     item = coupon[:item]
     cart[item][:count] -= coupon[:num]
     new_item = "#{item} W/COUPON"
-    binding.pry
     cart[new_item] = {
       price:coupon[:cost],
       clearance: cart[item][:clearance],
@@ -41,7 +40,6 @@ def apply_clearance(cart)
   cart.each do |food,value|
     cart[food][:price] = '%.2f' % (cart[food][:price] * 0.80) if cart[food][:clearance]
   end
-  puts cart
   cart
 end
 
@@ -50,6 +48,7 @@ def checkout(cart, coupons)
   cart = apply_coupons(cart, coupons)
   cart = apply_clearance(cart)
   puts cart
+  cart
 end
 
 checkout(my_cart, my_coupons)
