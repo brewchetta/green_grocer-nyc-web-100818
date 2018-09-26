@@ -48,3 +48,5 @@ end
 def checkout(cart, coupons)
   # code here
 end
+
+checkout(my_cart, my_coupons)
