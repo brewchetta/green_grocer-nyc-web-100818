@@ -6,7 +6,7 @@ my_cart = {
       "AVOCADO W/COUPON" => {:price => 5.0, :clearance => true, :count => 1},
 }
 
-my_coupon = 
+my_coupon = {:item => "AVOCADO", :num => 2, :cost => 5.0}
 
 def consolidate_cart(cart)
   new_cart = {}
