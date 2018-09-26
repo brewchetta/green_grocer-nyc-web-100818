@@ -3,7 +3,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     item.each do |name, values|
       new_cart[name] == nil ? new_cart[name] : new_cart[name][:count] += 1
-      values.each do
+      values.each do |k,v|
         new_cart[name]
       end
     end
