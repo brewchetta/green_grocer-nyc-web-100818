@@ -1,3 +1,5 @@
+require 'pry'
+
 my_cart = [
   {"AVOCADO" => {:price => 3.0, :clearance => true }},
   {"AVOCADO" => {:price => 3.0, :clearance => true }},
