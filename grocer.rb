@@ -30,6 +30,7 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     item = coupon[:item]
     item_w_coupon = "#{item} W/COUPON"
+    break if coupon[:num] > cart[item][:count]
     if cart[item_w_coupon] != nil
       cart[item][:count] -= coupon[:num]
       cart[item][:count] = 0 if cart[item][:count] < 0
